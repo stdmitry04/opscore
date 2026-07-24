@@ -1,0 +1,26 @@
+ENGINEERING PRACTICES — Acme Corporation Platform Team
+Version 2.4 | Last Updated: March 2025
+
+CODE REVIEW STANDARDS
+All code changes require at least one approving review before merging to main. Changes to critical infrastructure (authentication, payments, data migrations) require two approvals. Reviewers are expected to respond within one business day. The author is responsible for addressing all blocking comments before merge; non-blocking comments should be acknowledged but may be deferred. Reviewer guidelines: look for correctness first, then security implications, then performance, then style. Do not block PRs for personal style preferences not covered by the linter.
+
+BRANCHING STRATEGY
+We use trunk-based development. Feature branches should be short-lived (1-3 days ideal, 5 days maximum). Branch naming convention: feature/TICKET-description, fix/TICKET-description, chore/description. Direct commits to main are prohibited except for emergency hotfixes (require CTO approval). All branches are deleted after merge. Rebasing is preferred over merge commits to maintain a clean history.
+
+TESTING REQUIREMENTS
+Unit tests are required for all business logic functions. Integration tests are required for all API endpoints. Minimum coverage threshold: 80% overall, 90% for critical paths (auth, payments, data access). Test naming convention: test_[function]_[scenario]_[expected outcome]. Tests must be deterministic — no random data without seeded random, no time-dependent assertions without mocking. Flaky tests must be fixed or removed within one sprint of identification.
+
+DEPLOYMENT PROCESS
+We deploy to staging automatically on every merge to main. Production deployments happen Tuesday and Thursday at 2:00 PM EST unless a critical fix is needed. A deploy freeze is in effect from 3:00 PM Friday to 10:00 AM Monday and during the two weeks around major holidays. Production deploys require a deployment checklist to be completed and signed off by the deploying engineer and their manager. Database migrations must be backwards-compatible (additive only) for at least one full deploy cycle.
+
+INCIDENT RESPONSE
+Severity 1 (P1): Service completely unavailable or data loss occurring. PagerDuty alert fires immediately, on-call engineer has 5 minutes to acknowledge. War room opened within 15 minutes. Executive notification within 30 minutes.
+Severity 2 (P2): Significant feature degraded affecting more than 10% of users. On-call engineer acknowledges within 30 minutes. Team lead notified.
+Severity 3 (P3): Minor feature degraded or affecting less than 1% of users. Triaged within 4 business hours. Standard sprint process.
+Post-mortems are required for all P1 and P2 incidents, due within 5 business days. Blameless post-mortem format: timeline, contributing factors, what went well, corrective actions with owners and due dates.
+
+ARCHITECTURE DECISIONS
+Significant architectural changes require an Architecture Decision Record (ADR) reviewed by at least two senior engineers. ADRs live in the /docs/adr directory. Changes that affect data models, external APIs, authentication flows, or infrastructure patterns are considered significant. New third-party dependencies must be evaluated for security, license compatibility, and maintenance status before adoption.
+
+ON-CALL ROTATION
+Engineers join the on-call rotation after 6 months on the team. Rotations are weekly, Monday to Monday. On-call engineers are expected to be reachable within 5 minutes during business hours and 15 minutes outside business hours. On-call shifts that include weekends are compensated with a floating day off the following week. The on-call runbook is maintained in Notion and linked from the PagerDuty dashboard.

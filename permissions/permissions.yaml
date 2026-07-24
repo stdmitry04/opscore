@@ -1,0 +1,119 @@
+# Single source of truth for all permission codes.
+# Run `python permissions/generate.py` after editing to regenerate
+# permissions_registry.py and permissions.ts.
+#
+# CI check: python permissions/generate.py && git diff --exit-code
+
+- code: hr.employee.view
+  label: View Employees
+  description: View employee list and basic info
+  sensitive: false
+  category: hr
+
+- code: hr.employee.view_salary
+  label: View Salary
+  description: View salary details
+  sensitive: true
+  category: hr
+
+- code: hr.employee.create
+  label: Create Employee
+  description: Create new employee record
+  sensitive: false
+  category: hr
+
+- code: hr.employee.edit
+  label: Edit Employee
+  description: Edit employee information
+  sensitive: false
+  category: hr
+
+- code: hr.employee.delete
+  label: Delete Employee
+  description: Delete employee record
+  sensitive: false
+  category: hr
+
+- code: hr.job.view
+  label: View Jobs
+  description: View job postings
+  sensitive: false
+  category: hr
+
+- code: hr.job.create
+  label: Create Job
+  description: Create job posting
+  sensitive: false
+  category: hr
+
+- code: hr.job.edit
+  label: Edit Job
+  description: Edit job posting
+  sensitive: false
+  category: hr
+
+- code: hr.document.view
+  label: View Documents
+  description: View uploaded documents
+  sensitive: false
+  category: hr
+
+- code: hr.document.upload
+  label: Upload Documents
+  description: Upload documents to knowledge base
+  sensitive: false
+  category: hr
+
+- code: hr.document.delete
+  label: Delete Documents
+  description: Delete documents
+  sensitive: false
+  category: hr
+
+- code: analytics.view
+  label: View Analytics
+  description: View workforce analytics dashboard
+  sensitive: false
+  category: analytics
+
+- code: analytics.salary_report
+  label: Salary Report
+  description: View salary distribution reports
+  sensitive: true
+  category: analytics
+
+- code: agent.chat
+  label: Use Agent
+  description: Use AI assistant
+  sensitive: false
+  category: agent
+
+- code: agent.view_tool_calls
+  label: View Tool Calls
+  description: See agent tool call details in the UI
+  sensitive: false
+  category: agent
+
+- code: tasks.view
+  label: View Tasks
+  description: View task queue and history
+  sensitive: false
+  category: tasks
+
+- code: tasks.retry
+  label: Retry Tasks
+  description: Retry failed / dead-letter tasks
+  sensitive: false
+  category: tasks
+
+- code: rbac.view
+  label: View RBAC
+  description: View roles and permissions
+  sensitive: false
+  category: rbac
+
+- code: rbac.admin
+  label: RBAC Admin
+  description: Manage roles and permission grants
+  sensitive: false
+  category: rbac

@@ -1,0 +1,32 @@
+COMPENSATION PHILOSOPHY — Acme Corporation
+Approved by: Board of Directors | Last Review: Q4 2024
+
+PRINCIPLES
+We pay competitively to attract and retain top talent. We target the 65th to 75th percentile of total compensation for comparable roles at companies of similar size and stage in our primary markets. We believe in pay transparency within the company — all salary bands are visible to all employees. We regularly benchmark against market data (Radford, Levels.fyi, Glassdoor) and commit to adjusting bands annually. Pay equity reviews are conducted semi-annually; any unexplained gaps by gender, race, or other protected characteristics are remediated within two pay cycles.
+
+SALARY BANDS (2025, US, Full-Time Engineers)
+IC1 (New Grad): $115,000 — $135,000 base
+IC2 (Junior Engineer): $135,000 — $165,000 base
+IC3 (Software Engineer): $165,000 — $210,000 base
+IC4 (Senior Engineer): $210,000 — $260,000 base
+IC5 (Staff Engineer): $260,000 — $320,000 base
+IC6 (Principal Engineer): $300,000 — $380,000 base
+
+Engineering Manager: $220,000 — $280,000 base
+Director of Engineering: $280,000 — $360,000 base
+VP of Engineering: $320,000 — $420,000 base
+
+EQUITY
+New hire equity grants are structured as 4-year vesting with a 1-year cliff. Refresh grants are made annually at review time for employees rated Strong or Exceptional. Refresh grants vest monthly over 4 years with no cliff. The company targets equity to represent 20-40% of total compensation at senior levels (IC4+). Strike prices are set at Fair Market Value determined by a 409A valuation, updated at least annually.
+
+BONUS
+We do not have a traditional annual bonus structure. Instead, we offer spot bonuses for exceptional contributions (manager-discretionary, up to $5,000 per instance, no cap per year). For employees involved in enterprise sales or partnership closes, deal-based commissions may apply (defined in individual offer letters).
+
+COMPENSATION CHANGES
+Annual merit increases occur in January, tied to the December performance review cycle. Mid-cycle adjustments may be made for: promotions, counter-offers (rare and case-by-case), and documented market compression. Employees who believe their compensation is below band may request a market review through HR. Reviews are completed within 60 days of request.
+
+LOCATION POLICY
+We use a location-adjusted compensation model. Employees in Tier 1 markets (San Francisco, New York, Seattle) receive 100% of the base band. Tier 2 markets (Chicago, Austin, Denver, Boston) receive 90%. Tier 3 (all other US locations) receive 80%. International employees are compensated in local currency based on local market data, not US bands adjusted by exchange rate.
+
+TOTAL COMPENSATION STATEMENT
+All employees receive an annual total compensation statement in January showing base salary, estimated equity value (based on the most recent 409A), any spot bonuses received, and the dollar value of benefits. This statement is provided to help employees understand the full value of their package.

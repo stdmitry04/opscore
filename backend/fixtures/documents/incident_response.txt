@@ -1,0 +1,54 @@
+INCIDENT RESPONSE RUNBOOK — Acme Platform Engineering
+Owner: Platform Team | Review Cycle: Quarterly
+
+PURPOSE
+This runbook covers how to declare, respond to, and close incidents affecting Acme's production systems. All on-call engineers are expected to be familiar with this document before joining the rotation.
+
+DETECTING AN INCIDENT
+Incidents may be detected via: PagerDuty alert from monitoring (automatic), customer report via Zendesk (flagged to on-call by support), internal report via #incidents Slack channel, or anomaly in CloudWatch/Datadog dashboards. When in doubt, declare the incident. It is better to over-declare than to miss a real incident.
+
+DECLARING AN INCIDENT
+Post in #incidents Slack channel: "INCIDENT DECLARED: [brief description]. Severity: [P1/P2/P3]. On-call engineer: [name]."
+For P1/P2: open a Zoom war room immediately. Link the room in #incidents. Page the relevant team leads via PagerDuty.
+Create an incident ticket in Linear with the label "incident" and assign to yourself.
+
+SEVERITY DEFINITIONS
+P1 — Critical: Service completely unavailable OR data integrity issue OR security breach. Revenue impact > $10,000/hour. Response: immediate 24/7.
+P2 — High: Core feature severely degraded for > 10% of users. Revenue impact > $1,000/hour. Response: within 30 minutes, 24/7.
+P3 — Medium: Non-core feature degraded or < 10% of users impacted. Response: within 4 business hours.
+P4 — Low: Minor issue, workaround available. Response: next business day.
+
+INVESTIGATION STEPS
+1. Check CloudWatch Logs: look for ERROR and CRITICAL log entries in the last 30 minutes. ECS cluster: opscore-prod. Log groups: /opscore/backend, /opscore/celery.
+2. Check Datadog APM: identify which endpoints have elevated error rates or latency. Look for correlated spikes in database query time, cache miss rate, or queue depth.
+3. Check deployment history: was there a recent deployment? Check GitHub Actions for the last successful deploy to production. If a bad deploy is suspected, prepare to roll back.
+4. Check external dependencies: Anthropic API status page, AWS Service Health Dashboard, Stripe status, Qdrant cloud status.
+5. Check database connections: RDS console → Connection count. If connection pool exhausted, consider restarting Celery workers first (they hold the most connections).
+
+COMMON FIXES
+High error rate on API endpoints:
+  - Check for a failed database migration
+  - Look for a recently changed environment variable
+  - Check if Celery workers are consuming the queue (queue might be backed up)
+
+Celery queue backup:
+  - Check worker count: `celery -A opscore inspect active`
+  - Check for poison-pill task in dead-letter queue
+  - Scale up Celery workers via ECS task count
+
+Memory exhaustion on containers:
+  - Check for unbounded query without pagination
+  - Look for large file upload being held in memory
+  - Scale up container memory in ECS task definition
+
+ESCALATION PATH
+On-call engineer (first 15 minutes) → Team lead (15-30 minutes) → Engineering Manager (30-60 minutes) → CTO (P1 only, > 60 minutes or data loss)
+
+POST-MORTEM
+Required for P1 and P2 incidents. Due within 5 business days. Template is in Notion at: Engineering / Incident Response / Post-Mortem Template. Post-mortems are blameless. Focus on contributing factors, not individual mistakes. Action items must have owners and due dates.
+
+CONTACTS
+PagerDuty escalation policy: opscore-backend-oncall
+Slack: #incidents (all incidents), #p1-warroom (active P1 only)
+AWS Support: Enterprise support tier, case number in LastPass
+Anthropic API support: support@anthropic.com (Enterprise SLA: 4-hour response)

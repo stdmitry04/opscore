@@ -1,0 +1,33 @@
+INTERVIEW PROCESS — Acme Corporation Recruiting
+Updated: February 2025
+
+PHILOSOPHY
+We evaluate candidates on four dimensions: technical skill, problem-solving approach, communication, and culture alignment. We aim to make hiring decisions within 2 weeks of the first interview. We hold a high bar consistently — we prefer to leave a role open longer than to make a wrong hire. All interviewers are trained on structured interviewing to reduce bias.
+
+STAGES — ENGINEERING ROLES
+
+Stage 1: Recruiter Screen (30 minutes, phone/video)
+Topics covered: career history, motivation for the role, logistics (comp expectations, start date, location). Recruiters look for clear communication, genuine interest, and basic role fit. Outcome: proceed to technical screen or decline within 3 business days.
+
+Stage 2: Technical Screen (60 minutes, video with shared coding environment)
+One algorithmic problem (medium LeetCode difficulty) and one system design question appropriate to the level. IC3-IC5 levels receive system design questions. IC1-IC2 receive a second coding question instead. Interviewers are looking for correctness, efficiency, communication of thought process, and ability to handle hints. Outcome: proceed to onsite or decline within 48 hours.
+
+Stage 3: Onsite (4 hours total, can be split across 2 days for remote candidates)
+- Systems Design (60 min): Design a production system relevant to the role. IC5+ candidates design at the distributed systems level.
+- Coding Deep Dive (60 min): Two medium-hard coding problems, one of which may be domain-specific (e.g., parsing, concurrency).
+- Architecture and Debugging (60 min): Review a realistic codebase with intentional bugs and architectural issues. Candidate identifies problems and proposes solutions.
+- Behavioral and Values (45 min): STAR-format questions about past projects, conflict resolution, and failure recovery. Led by the hiring manager or senior team member.
+- Bar Raiser (optional, 45 min): For senior hires, a cross-functional senior engineer who is not on the hiring team assesses whether the candidate raises the overall team bar.
+
+EVALUATION CRITERIA BY LEVEL
+IC1 (New Grad): Strong CS fundamentals, learns quickly, coachable.
+IC2 (Junior): Independent on well-defined tasks, solid coding fundamentals.
+IC3 (Mid): Owns features end-to-end, strong debugging, basic system design.
+IC4 (Senior): Defines technical direction for a team, mentors others, cross-team impact.
+IC5 (Staff): Company-wide technical leverage, leads multi-team initiatives.
+
+OFFER PROCESS
+Offers are extended verbally by the recruiter within 2 business days of the final interview. Written offer letters are sent within 24 hours of verbal offer acceptance. Offer expiration is typically 5 business days. Offers include base salary, equity (stock options), bonus target, benefits summary, and start date.
+
+CANDIDATE EXPERIENCE
+All candidates receive a decision within the stated timeline. Candidates who make it to the onsite but are not selected receive a brief summary of strengths and areas where they did not meet the bar (upon request). We do not share detailed scoring rubrics with candidates but are willing to provide general feedback.

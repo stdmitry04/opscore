@@ -1,0 +1,27 @@
+EMPLOYEE BENEFITS GUIDE — Acme Corporation
+Updated: Q1 2025
+
+HEALTH INSURANCE
+We offer three tiers of medical coverage through BlueCross BlueShield: Bronze, Silver, and Gold. The company covers 90% of employee premiums and 70% of dependent premiums across all tiers. Dental and vision insurance are bundled with medical at no additional cost. Open enrollment runs from November 1-30 each year; changes take effect January 1. New employees may enroll within 30 days of their start date. Domestic partners are eligible for coverage with documentation. COBRA continuation coverage is available for up to 18 months after separation.
+
+RETIREMENT — 401(k)
+Employees may contribute to the 401(k) plan beginning on their first day of employment. The company matches 100% of contributions up to 4% of base salary and 50% of contributions for the next 2% (effective match: up to 5%). Matching is immediate with no vesting cliff. The IRS contribution limit for 2025 is $23,000 ($30,500 for employees 50 and over). Investment options include target-date funds, index funds, and a self-directed brokerage window. A Roth 401(k) option is also available.
+
+PAID TIME OFF
+Full-time employees accrue PTO at the following rates:
+  - Years 0-3: 15 days per year (1.25 days/month)
+  - Years 3-6: 20 days per year (1.67 days/month)
+  - Years 6+: 25 days per year (2.08 days/month)
+PTO accrual begins on day one. Up to 10 days may roll over to the next calendar year. Unused PTO above the rollover cap is forfeited at year end. PTO is paid out upon separation for employees with more than 1 year of tenure (jurisdiction-dependent).
+
+PARENTAL LEAVE
+Primary caregivers receive 16 weeks of fully paid parental leave. Secondary caregivers receive 6 weeks of fully paid leave. Leave may be taken at any point within 12 months of the birth, adoption, or foster placement. Intermittent leave is permitted in 1-week minimum increments. Employees must provide 30 days notice for planned leave where possible.
+
+LEARNING AND DEVELOPMENT
+Each employee receives an annual L&D budget of $2,000. Approved uses include: online courses (Coursera, Udemy, Pluralsight), conference attendance, professional certifications, and technical books. Requests over $500 require manager pre-approval and receipts. The company also provides access to O'Reilly Learning (unlimited access) and internal training programs. Employees who receive company-sponsored certifications agree to remain with the company for 12 months or repay 50% of the certification cost.
+
+MENTAL HEALTH AND WELLNESS
+All employees have access to 12 free therapy sessions per year through our Employee Assistance Program (EAP). A wellness stipend of $50/month is available for gym memberships, fitness apps, or wellness services. Mental health days (up to 3 per year) may be taken without using PTO with manager notification.
+
+STOCK OPTIONS
+Full-time employees hired before a liquidity event are eligible for stock options. Grants vest over 4 years with a 1-year cliff. Option strike prices are set at Fair Market Value at the time of grant. The company targets option pools at the 50th-75th percentile of comparable companies at our stage.
